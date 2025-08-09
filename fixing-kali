@@ -1,0 +1,16 @@
+sudo apt update && apt upgrade -y
+sudo apt install tigervnc-standalone-server tigervnc-xorg-extension lxde --install-recommends
+sudo chmod +x start-kex stop-kex passwd-kex
+sudo cp start-kex /usr/local/bin/
+sudo cp stop-kex /usr/local/bin/
+sudo cp passwd-kex /usr/local/bin/
+sudo updatedb
+
+printf "\033[0;34m   ###############################################\n"
+printf "\033[0;32m  #            welcome to fixing-kali             #\n" 
+printf "\033[0;32m # Subscribe https://www.youtube.com/@PhilipPliiin #\n"
+printf "\033[0;32m  #           https://philippliiin.com            #\n"
+printf "\033[0;34m   ###############################################\n"
+printf "\033[0;33m passwd-kex  # to set or change vnc passwd\n"
+printf "\033[0;33m start-kex   # to start vnc server\n"
+printf "\033[0;33m stop-kex    # to stop vnc server\n"
